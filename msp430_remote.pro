@@ -1,4 +1,4 @@
-update=Sun 12 May 2013 06:43:18 PM WEST
+update=Thu 23 May 2013 08:30:36 AM WEST
 version=1
 last_client=eeschema
 [cvpcb]
@@ -47,7 +47,7 @@ LibName16=valves
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../../../joao
 NetFmtName=
 RptD_X=0
 RptD_Y=100
@@ -84,4 +84,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=/home/joao/kicad/Libs/embedded-microcontrollers
+LibName31=kicad/Libs/embedded-microcontrollers
