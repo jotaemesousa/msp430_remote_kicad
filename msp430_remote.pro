@@ -1,11 +1,6 @@
-update=Thu 23 May 2013 08:30:36 AM WEST
+update=25-05-2013 18:07:42
 version=1
-last_client=eeschema
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+last_client=kicad
 [pcbnew]
 version=1
 LastNetListRead=
@@ -26,7 +21,6 @@ DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -43,11 +37,11 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
-[general]
-version=1
+LibName17=lm3668
+LibDir=../../Exports_ultralibrarian/Kicad
 [eeschema]
 version=1
-LibDir=../../../../joao
+LibDir=../../Exports_ultralibrarian/Kicad;../../Exports_ultralibrarian/Kicad
 NetFmtName=
 RptD_X=0
 RptD_Y=100
@@ -85,3 +79,11 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=kicad/Libs/embedded-microcontrollers
+LibName32=lm3668
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
+[general]
+version=1

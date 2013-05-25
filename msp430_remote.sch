@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 2  date 25-05-2013 18:07:38
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,14 +29,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:lm3668
 LIBS:msp430_remote-cache
-EELAYER 24 0
+EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "23 may 2013"
+Date "25 may 2013"
 Rev ""
 Comp ""
 Comment1 ""

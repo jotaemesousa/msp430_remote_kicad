@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /home/joao/kicad/Projects/msp430_remote/msp430_remote.sch)
-    (date "Thu 23 May 2013 08:28:42 AM WEST")
-    (tool "eeschema (2013-mar-13)-testing"))
+    (source C:/Users/João/Documents/KiCad/msp430_remmote_kicad/msp430_remote.sch)
+    (date "25-05-2013 17:54:14")
+    (tool "eeschema (2013-04-19 BZR 4011)-stable"))
   (components
     (comp (ref C4)
       (value C)
@@ -127,9 +127,7 @@
       (description "Symbole general de connecteur")
       (fields
         (field (name Reference) K)
-        (field (name Value) CONN_3)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) CONN_3))
       (pins
         (pin (num 1) (name P1) (type passive))
         (pin (num 2) (name PM) (type passive))
@@ -138,9 +136,7 @@
       (description "Symbole general de connecteur")
       (fields
         (field (name Reference) P)
-        (field (name Value) CONN_4)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) CONN_4))
       (pins
         (pin (num 1) (name P1) (type passive))
         (pin (num 2) (name P2) (type passive))
@@ -150,9 +146,7 @@
       (description "Symbole general de connecteur")
       (fields
         (field (name Reference) P)
-        (field (name Value) CONN_4X2)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) CONN_4X2))
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))
@@ -166,9 +160,7 @@
       (description "Symbole general de connecteur")
       (fields
         (field (name Reference) P)
-        (field (name Value) CONN_5)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) CONN_5))
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))
@@ -218,14 +210,14 @@
         (pin (num 19) (name XIN/P2.6/TA0.1) (type BiDi))
         (pin (num 20) (name DVSS) (type power_in)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
-    (library (logical linear)
-      (uri /usr/share/kicad/library/linear.lib))
     (library (logical msp430_remote-cache)
-      (uri /home/joao/kicad/Projects/msp430_remote/msp430_remote-cache.lib)))
+      (uri C:\Users\João\Documents\KiCad\msp430_remmote_kicad\msp430_remote-cache.lib))
+    (library (logical device)
+      (uri "C:\\Program Files (x86)\\KiCad\\share\\library\\device.lib"))
+    (library (logical conn)
+      (uri "C:\\Program Files (x86)\\KiCad\\share\\library\\conn.lib"))
+    (library (logical linear)
+      (uri "C:\\Program Files (x86)\\KiCad\\share\\library\\linear.lib")))
   (nets
     (net (code 1) (name /POT_DRIVE)
       (node (ref P4) (pin 2))
