@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 25-05-2013 19:04:24
+EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,15 +29,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:lm3668
 LIBS:msp430_remote-cache
-EELAYER 27 0
+EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "25 may 2013"
+Date "27 may 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -188,7 +187,7 @@ F 3 "" H 4750 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2900 3300 0    60   ~ 0
-!RST
+~RST
 Text Label 2900 3400 0    60   ~ 0
 TEST
 Wire Wire Line
@@ -218,9 +217,9 @@ $EndComp
 Wire Wire Line
 	1850 5900 1850 6050
 Text Label 2400 5800 0    60   ~ 0
-TEST
+~RST
 Text Label 2400 5700 0    60   ~ 0
-!RST
+TEST
 $Comp
 L +3.3V #PWR09
 U 1 1 518FD71B
@@ -317,11 +316,11 @@ Wire Wire Line
 Text Label 6400 3250 0    60   ~ 0
 CE
 Text Label 6400 3350 0    60   ~ 0
-IRQ
+B2
 Text Label 6400 3450 0    60   ~ 0
 B1
 Text Label 6400 3550 0    60   ~ 0
-B2
+IRQ
 Text Label 6400 3650 0    60   ~ 0
 B3
 Text Label 6400 3750 0    60   ~ 0
@@ -509,20 +508,9 @@ $EndComp
 Wire Wire Line
 	2250 7000 2250 6800
 Text Label 1400 6600 0    60   ~ 0
-LED1
-Text Label 1400 6700 0    60   ~ 0
 LED2
-$Comp
-L CONN_5 P2
-U 1 1 519DC0DA
-P 3700 6800
-F 0 "P2" V 3650 6800 50  0000 C CNN
-F 1 "CONN_5" V 3750 6800 50  0000 C CNN
-F 2 "~" H 3700 6800 60  0000 C CNN
-F 3 "~" H 3700 6800 60  0000 C CNN
-	1    3700 6800
-	-1   0    0    1   
-$EndComp
+Text Label 1400 6700 0    60   ~ 0
+LED1
 Wire Wire Line
 	4450 6600 4100 6600
 Wire Wire Line
@@ -609,7 +597,6 @@ Wire Wire Line
 	10400 5850 10400 5800
 Wire Wire Line
 	2200 3700 2200 3800
-NoConn ~ 3150 2500
 NoConn ~ 3150 2600
 $Comp
 L GND #PWR021
@@ -633,4 +620,156 @@ Connection ~ 8600 4100
 Connection ~ 8600 5500
 Wire Wire Line
 	2000 5600 1850 5600
+Wire Wire Line
+	2700 2500 3150 2500
+Text Label 2700 2500 0    60   ~ 0
+pwr_pin
+$Comp
+L CONN_5 P2
+U 1 1 51A31857
+P 3700 6800
+F 0 "P2" V 3650 6800 50  0000 C CNN
+F 1 "CONN_5" V 3750 6800 50  0000 C CNN
+F 2 "~" H 3700 6800 60  0000 C CNN
+F 3 "~" H 3700 6800 60  0000 C CNN
+	1    3700 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG022
+U 1 1 51A31A0B
+P 2400 1450
+F 0 "#FLG022" H 2400 1545 30  0001 C CNN
+F 1 "PWR_FLAG" H 2400 1630 30  0000 C CNN
+F 2 "" H 2400 1450 60  0000 C CNN
+F 3 "" H 2400 1450 60  0000 C CNN
+	1    2400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG023
+U 1 1 51A31A28
+P 2700 1450
+F 0 "#FLG023" H 2700 1545 30  0001 C CNN
+F 1 "PWR_FLAG" H 2700 1630 30  0000 C CNN
+F 2 "" H 2700 1450 60  0000 C CNN
+F 3 "" H 2700 1450 60  0000 C CNN
+	1    2700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR024
+U 1 1 51A31A2E
+P 2400 1450
+F 0 "#PWR024" H 2400 1410 30  0001 C CNN
+F 1 "+3.3V" H 2400 1560 30  0000 C CNN
+F 2 "" H 2400 1450 60  0000 C CNN
+F 3 "" H 2400 1450 60  0000 C CNN
+	1    2400 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 51A31A34
+P 2700 1450
+F 0 "#PWR025" H 2700 1450 30  0001 C CNN
+F 1 "GND" H 2700 1380 30  0001 C CNN
+F 2 "" H 2700 1450 60  0000 C CNN
+F 3 "" H 2700 1450 60  0000 C CNN
+	1    2700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 51A31B1E
+P 4400 5100
+F 0 "R4" V 4480 5100 40  0000 C CNN
+F 1 "R" V 4407 5101 40  0000 C CNN
+F 2 "~" V 4330 5100 30  0000 C CNN
+F 3 "~" H 4400 5100 30  0000 C CNN
+	1    4400 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5350 4600 5350
+Wire Wire Line
+	4600 5350 4600 5150
+Wire Wire Line
+	4050 4850 4400 4850
+$Comp
+L GND #PWR026
+U 1 1 51A31BAB
+P 4050 5150
+F 0 "#PWR026" H 4050 5150 30  0001 C CNN
+F 1 "GND" H 4050 5080 30  0001 C CNN
+F 2 "" H 4050 5150 60  0000 C CNN
+F 3 "" H 4050 5150 60  0000 C CNN
+	1    4050 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4950 4050 5150
+$Comp
+L CONN_3 K2
+U 1 1 51A31C87
+P 3700 4850
+F 0 "K2" V 3650 4850 50  0000 C CNN
+F 1 "CONN_3" V 3750 4850 40  0000 C CNN
+F 2 "~" H 3700 4850 60  0000 C CNN
+F 3 "~" H 3700 4850 60  0000 C CNN
+	1    3700 4850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4750 4800 4750
+Wire Wire Line
+	4800 4750 4800 4850
+$Comp
+L R R5
+U 1 1 51A31D97
+P 4850 5150
+F 0 "R5" V 4930 5150 40  0000 C CNN
+F 1 "R" V 4857 5151 40  0000 C CNN
+F 2 "~" V 4780 5150 30  0000 C CNN
+F 3 "~" H 4850 5150 30  0000 C CNN
+	1    4850 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ZENER D1
+U 1 1 51A31D9F
+P 5100 5350
+F 0 "D1" H 5100 5450 50  0000 C CNN
+F 1 "ZENER" H 5100 5250 40  0000 C CNN
+F 2 "~" H 5100 5350 60  0000 C CNN
+F 3 "~" H 5100 5350 60  0000 C CNN
+	1    5100 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 51A31DAC
+P 5100 5550
+F 0 "#PWR027" H 5100 5550 30  0001 C CNN
+F 1 "GND" H 5100 5480 30  0001 C CNN
+F 2 "" H 5100 5550 60  0000 C CNN
+F 3 "" H 5100 5550 60  0000 C CNN
+	1    5100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P5
+U 1 1 51A31F6A
+P 4750 5350
+F 0 "P5" H 4830 5350 40  0000 L CNN
+F 1 "CONN_1" H 4750 5405 30  0001 C CNN
+F 2 "~" H 4750 5350 60  0000 C CNN
+F 3 "~" H 4750 5350 60  0000 C CNN
+	1    4750 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5150 5100 5150
+Text Label 5350 5150 0    60   ~ 0
+pwr_pin
 $EndSCHEMATC
