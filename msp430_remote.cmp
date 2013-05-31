@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Tue 28 May 2013 11:01:22 PM WEST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Fri 31 May 2013 01:15:23 PM WEST
 
 BeginCmp
 TimeStamp = /518FD277;
@@ -32,7 +32,7 @@ BeginCmp
 TimeStamp = /51A31D9F;
 Reference = D1;
 ValeurCmp = ZENER;
-IdModule  = D3;
+IdModule  = sod523;
 EndCmp
 
 BeginCmp
